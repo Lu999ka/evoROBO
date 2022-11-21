@@ -1,7 +1,17 @@
 import pyrosim.pyrosim as pyrosim
 
-pyrosim.Start_SDF("box.sdf")
+length = 1
+width = 1
+height = 1
 
-pyrosim.Send_Cube("box.sdf", [0, 0, 0.5], [1, 1, 1])
+x = 0
+y = 0
+z = 0
+
+
+pyrosim.Start_SDF("boxes.sdf")
+pyrosim.Send_Cube("box_0.sdf", [x, y, z], [length, width, height])
+pyrosim.Send_Cube("box_1.sdf", [x, y, z], [length, width, height])
+
 
 pyrosim.End()
