@@ -9,7 +9,7 @@ p.setGravity(0, 0, -9.81)
 p.loadSDF("boxes.sdf")
 
 for sec in range(1000):
-    time.sleep(1/100)
+    time.sleep(1/60)
     p.stepSimulation()
 p.disconnect()
 
