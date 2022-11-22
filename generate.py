@@ -40,6 +40,7 @@ def Create_Robot():
     pyrosim.Send_Cube("BackLeg", [-0.5, 0, -0.5], [1, 1, 1])
     pyrosim.Send_Joint(name="Torso_FrontLeg", parent="Torso", child="FrontLeg", type="revolute", position=[2, 0, 1])
     pyrosim.Send_Cube("FrontLeg", [0.5, 0, -0.5], [1, 1, 1])
+
     pyrosim.End()
 
 
